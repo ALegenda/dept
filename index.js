@@ -47,8 +47,8 @@ app.get('/api/adduser/:login/:password', function (request, response)
             console.log(doc);
             var password = request.params.password;
             var hash = passwordHash.generate((password));
-            collection.insertOne({"login": login, "password": password, "hash": hash});
-            response.send('added');
+            collection.insertOne({"login": login, "password": password, "hash": hash, "teams": []});
+            response.send(hash);
         }
     });
 });
@@ -70,8 +70,8 @@ app.get('/api/addteam/:login/:password', function (request, response)
             console.log(doc);
             var password = request.params.password;
             var hash = passwordHash.generate((password));
-            collection.insertOne({"login": login, "password": password, "hash": hash});
-            response.send('added');
+            collection.insertOne({"login": login, "password": password, "hash": hash, "users": []});
+            response.send(hash);
         }
     });
 });
@@ -88,7 +88,7 @@ app.get('/api/verifyuser/:login/:password', function (request, response)
             console.log('kek');
             console.log(doc.hash);
 
-            if(passwordHash.verify(password,doc.hash))
+            if (passwordHash.verify(password, doc.hash))
                 response.send('Ok');
             else
                 response.send('Incorrect password');
@@ -112,8 +112,8 @@ app.get('/api/verifyteam/:login/:password', function (request, response)
             console.log('kek');
             console.log(doc.hash);
 
-            if(passwordHash.verify(password,doc.hash))
-                response.send('Ok');
+            if (passwordHash.verify(password, doc.hash))
+                response.send(passwordHash.generate(password));
             else
                 response.send('Incorrect password');
         }
@@ -124,9 +124,13 @@ app.get('/api/verifyteam/:login/:password', function (request, response)
     });
 });
 
+app.get('/api/addusertoteam/:user/:hashpass/:team/:hashteam', function (request, response)
+{
 
-/*app.listen(app.get('port'), function() {
+})
+
+app.listen(app.get('port'), function() {
  console.log('Node app is running on port', app.get('port'));
- });*/
-app.listen(3000);
+ });
+//app.listen(3000);
 
