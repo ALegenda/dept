@@ -129,7 +129,7 @@ app.get('/api/addusertoteam/:user/:hashpass/:team/:hashteam', function (request,
     var collectionUser = db.collection('Users');
     var login = request.params.user;
     var hash = request.params.hash;
-    var person = collectionUser.findOne({'login': login}).then(function (doc)
+    var person = collectionUser.findOne({'login': login, 'hash': hash}).then(function (doc)
     {
         if (doc)
         {
