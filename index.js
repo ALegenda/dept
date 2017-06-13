@@ -126,11 +126,32 @@ app.get('/api/verifyteam/:login/:password', function (request, response)
 
 app.get('/api/addusertoteam/:user/:hashpass/:team/:hashteam', function (request, response)
 {
-    response.send("done");
+    var collectionUser = db.collection('Users');
+    var login = request.params.user;
+    var hash = request.params.hash;
+    var person = collectionUser.findOne({'login': login}).then(function (doc)
+    {
+        if (doc)
+        {
+            var collectionTeam = db.collection('Teams');
+            var res = collectionTeam.findOne({'login': login, 'hash': hash}).then(function (tmp)
+            {
+                if (doc)
+                {
+                    response.send("done");
+                }
+                else
+                    response.send('I have not this team');
+            });
+        }
+        else
+            response.send('I have not this user');
+    });
 });
 
-app.listen(app.get('port'), function() {
- console.log('Node app is running on port', app.get('port'));
- });
+app.listen(app.get('port'), function ()
+{
+    console.log('Node app is running on port', app.get('port'));
+});
 //app.listen(3000);
 
