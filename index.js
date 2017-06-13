@@ -133,11 +133,12 @@ app.get('/api/addusertoteam/:user/:hashpass/:team/:hashteam', function (request,
         if (doc)
         {
             person = doc;
+            response.send(person)
         }
         else
             response.send('I have not this user');
     });
-    response.send(person)
+
     /*
     var res = collectionTeam.findOne({'login': request.params.team, 'hash': hashteam}).then(function (tmp)
     {
