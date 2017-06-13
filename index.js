@@ -126,8 +126,8 @@ app.get('/api/verifyteam/:login/:password', function (request, response)
 
 app.get('/api/addusertoteam/:user/:hashpass/:team/:hashteam', function (request, response)
 {
-
-})
+    response.send("done");
+});
 
 app.listen(app.get('port'), function() {
  console.log('Node app is running on port', app.get('port'));
