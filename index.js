@@ -127,18 +127,16 @@ app.get('/api/verifyteam/:login/:password', function (request, response)
 app.get('/api/addusertoteam/:user/:hashpass/:team/:hashteam', function (request, response)
 {
     var collectionUser = db.collection('Users');
-    var login = request.params.user;
-    var hash = request.params.hash;
-    var person = collectionUser.findOne({'login': login, 'hash': hash}).then(function (doc)
+    var person = collectionUser.findOne({'login': request.params.user, 'hash': request.params.hashpass}).then(function (doc)
     {
         if (doc)
         {
             var collectionTeam = db.collection('Teams');
-            var res = collectionTeam.findOne({'login': login, 'hash': hash}).then(function (tmp)
+            var res = collectionTeam.findOne({'login': request.params.team, 'hash': hashteam}).then(function (tmp)
             {
-                if (doc)
+                if (tmp)
                 {
-                    response.send("done");
+                    response.send(tmp.login);
                 }
                 else
                     response.send('I have not this team');
