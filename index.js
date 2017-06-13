@@ -132,19 +132,23 @@ app.get('/api/addusertoteam/:user/:hashpass/:team/:hashteam', function (request,
     {
         if (doc)
         {
-            var res = collectionTeam.findOne({'login': request.params.team, 'hash': hashteam}).then(function (tmp)
-            {
-                if (tmp)
-                {
-                    response.send("Done");
-                }
-                else
-                    response.send('I have not this team');
-            });
+            person = doc;
         }
         else
             response.send('I have not this user');
     });
+    response.send(person)
+    /*
+    var res = collectionTeam.findOne({'login': request.params.team, 'hash': hashteam}).then(function (tmp)
+    {
+        if (tmp)
+        {
+            response.send("Done");
+        }
+        else
+            response.send('I have not this team');
+    });
+    */
 });
 
 app.listen(app.get('port'), function ()
