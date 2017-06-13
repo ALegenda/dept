@@ -136,12 +136,14 @@ app.get('/api/addusertoteam/:user/:hashpass/:team/:hashteam', function (request,
             var res = collectionTeam.findOne({'login': request.params.team, 'hash': hashteam}).then(function (tmp)
             {
                 response.send("wow");
+                /*
                 if (tmp)
                 {
                     response.send("Done");
                 }
                 else
                     response.send('I have not this team');
+                */
             });
         }
         else
