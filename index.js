@@ -148,9 +148,9 @@ app.get('/api/addusertoteam/:user/:hashpass/:team/:hashteam', function (request,
         }
         else
             response.send('I have not this user');
-    }).callback;
+    });
 
-    response.send(kek);
+    //response.send(kek);
     /*
 
     */
