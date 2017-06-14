@@ -133,9 +133,10 @@ app.get('/api/addusertoteam/:user/:hashpass/:team/:hashteam', function (request,
     {
         if (doc)
         {
+            response.send("wow");
             var res = collectionTeam.findOne({'login': request.params.team, 'hash': hashteam}).then(function (tmp)
             {
-                response.send("wow");
+
                 /*
                 if (tmp)
                 {
