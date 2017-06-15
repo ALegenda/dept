@@ -143,7 +143,7 @@ app.get('/api/addusertoteam/:user/:hashpass/:team/:hashteam', function (request,
                     collectionTeam.updateOne({'login':request.params.team},{$set:{'users':u}});
                     collectionUser.updateOne({'login':request.params.user},{$set:{'teams':t}});
 
-                    //response.send('ok');
+                    response.send('ok');
                 }
                 else
                     response.send('I have not this team');
