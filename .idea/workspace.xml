@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff3d3bb0-65d3-402e-9675-8206a1b23d7f" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.js" afterPath="$PROJECT_DIR$/index.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -43,14 +44,14 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="457">
-              <caret line="140" column="0" lean-forward="true" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
+            <state relative-caret-position="499">
+              <caret line="142" column="22" lean-forward="false" selection-start-line="142" selection-start-column="22" selection-end-line="142" selection-end-column="22" />
               <folding>
-                <marker date="1497546925026" expanded="false" signature="573:608" ph="{...}" />
-                <marker date="1497546925026" expanded="false" signature="657:686" ph="{...}" />
-                <marker date="1497546925026" expanded="false" signature="760:1396" ph="{...}" />
-                <marker date="1497546925026" expanded="false" signature="1470:2106" ph="{...}" />
-                <marker date="1497546925026" expanded="false" signature="3032:3419" ph="{...}" />
+                <marker date="1497547060709" expanded="false" signature="573:608" ph="{...}" />
+                <marker date="1497547060709" expanded="false" signature="657:686" ph="{...}" />
+                <marker date="1497547060709" expanded="false" signature="760:1396" ph="{...}" />
+                <marker date="1497547060709" expanded="false" signature="1470:2106" ph="{...}" />
+                <marker date="1497547060709" expanded="false" signature="3032:3419" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -264,12 +265,12 @@
       <option name="presentableId" value="Default" />
       <updated>1497209705456</updated>
       <workItem from="1497209706667" duration="2581000" />
-      <workItem from="1497213179657" duration="24296000" />
+      <workItem from="1497213179657" duration="24403000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26877000" />
+    <option name="totallyTimeSpent" value="26984000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -369,11 +370,11 @@
         <state relative-caret-position="105">
           <caret line="5" column="93" lean-forward="false" selection-start-line="5" selection-start-column="93" selection-end-line="5" selection-end-column="93" />
           <folding>
-            <marker date="1497546925026" expanded="false" signature="573:608" ph="{...}" />
-            <marker date="1497546925026" expanded="false" signature="657:686" ph="{...}" />
-            <marker date="1497546925026" expanded="false" signature="760:1396" ph="{...}" />
-            <marker date="1497546925026" expanded="false" signature="1470:2106" ph="{...}" />
-            <marker date="1497546925026" expanded="false" signature="3032:3419" ph="{...}" />
+            <marker date="1497547060709" expanded="false" signature="573:608" ph="{...}" />
+            <marker date="1497547060709" expanded="false" signature="657:686" ph="{...}" />
+            <marker date="1497547060709" expanded="false" signature="760:1396" ph="{...}" />
+            <marker date="1497547060709" expanded="false" signature="1470:2106" ph="{...}" />
+            <marker date="1497547060709" expanded="false" signature="3032:3419" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -450,14 +451,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="140" column="0" lean-forward="true" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
+        <state relative-caret-position="499">
+          <caret line="142" column="22" lean-forward="false" selection-start-line="142" selection-start-column="22" selection-end-line="142" selection-end-column="22" />
           <folding>
-            <marker date="1497546925026" expanded="false" signature="573:608" ph="{...}" />
-            <marker date="1497546925026" expanded="false" signature="657:686" ph="{...}" />
-            <marker date="1497546925026" expanded="false" signature="760:1396" ph="{...}" />
-            <marker date="1497546925026" expanded="false" signature="1470:2106" ph="{...}" />
-            <marker date="1497546925026" expanded="false" signature="3032:3419" ph="{...}" />
+            <marker date="1497547060709" expanded="false" signature="573:608" ph="{...}" />
+            <marker date="1497547060709" expanded="false" signature="657:686" ph="{...}" />
+            <marker date="1497547060709" expanded="false" signature="760:1396" ph="{...}" />
+            <marker date="1497547060709" expanded="false" signature="1470:2106" ph="{...}" />
+            <marker date="1497547060709" expanded="false" signature="3032:3419" ph="{...}" />
           </folding>
         </state>
       </provider>

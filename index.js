@@ -137,9 +137,10 @@ app.get('/api/addusertoteam/:user/:hashpass/:team/:hashteam', function (request,
                 if (item2)
                 {
                     var t = item2.teams.add(item.login);
-                    collectionTeam.updateOne({'login':request.params.team},{$set:{'teams':t}});
+                    response.send(t);
+                    //collectionTeam.updateOne({'login':request.params.team},{$set:{'teams':t}});
 
-                    response.send('ok');
+                    //response.send('ok');
                 }
                 else
                     response.send('I have not this team');
