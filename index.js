@@ -132,7 +132,15 @@ app.get('/api/addusertoteam/:user/:hashpass/:team/:hashteam', function (request,
     {
         if (item)
         {
-            response.send(item);
+            var kek = collectionTeam.findOne({'login': request.params.team, 'hash': request.params.hashteam}, function (err2,item2)
+            {
+                if (item2)
+                {
+                    response.send(item2);
+                }
+                else
+                    response.send('I have not this team');
+            });
         }
         else
             response.send('I have not this user');
