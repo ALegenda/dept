@@ -128,15 +128,18 @@ app.get('/api/addusertoteam/:user/:hashpass/:team/:hashteam', function (request,
 {
     var collectionUser = db.collection('Users');
     var collectionTeam = db.collection('Teams');
-    var test = collectionUser.findOne({'login': request.params.user, 'hash': request.params.hashpass}, function (err,item)
+    collectionUser.findOne({'login': request.params.user, 'hash': request.params.hashpass}, function (err,item)
     {
         if (item)
         {
-            var kek = collectionTeam.findOne({'login': request.params.team, 'hash': request.params.hashteam}, function (err2,item2)
+            collectionTeam.findOne({'login': request.params.team, 'hash': request.params.hashteam}, function (err2,item2)
             {
                 if (item2)
                 {
-                    response.send(item.teams.add('kek'));
+                    var t = item2.teams.add(item.login);
+                    collectionTeam.updateOne({'login':request.params.team},{$set:{'teams':t}});
+
+                    response.send('ok');
                 }
                 else
                     response.send('I have not this team');
