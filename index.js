@@ -136,7 +136,7 @@ app.get('/api/addusertoteam/:user/:hashpass/:team/:hashteam', function (request,
             {
                 if (item2)
                 {
-                    response.send([item,item2]);
+                    response.send(item.login);
                 }
                 else
                     response.send('I have not this team');
