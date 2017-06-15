@@ -138,8 +138,10 @@ app.get('/api/addusertoteam/:user/:hashpass/:team/:hashteam', function (request,
                 {
                     var u = item2.users;
                     u.push(item.login);
-                    response.send(u);
-                    //collectionTeam.updateOne({'login':request.params.team},{$set:{'users':t}});
+                    var t = item.teams;
+                    t.push(item2.login);
+                    collectionTeam.updateOne({'login':request.params.team},{$set:{'users':u}});
+                    collectionUser.updateOne({'login':request.params.user},{$set:{'teams':t}});
 
                     //response.send('ok');
                 }
