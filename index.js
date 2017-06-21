@@ -100,16 +100,16 @@ app.get('/api/userinfo/:userlogin', function (request, response)
     var login = request.params.userlogin;
     response.send(login);
     /*var tmp = collection.find({'user': login}, function (err, items)
-    {
-        if(items)
-        {
-            response.send(items);
-        }
-        else
-        {
-            response.send(items);
-        }
-    });*/
+     {
+     if(items)
+     {
+     response.send(items);
+     }
+     else
+     {
+     response.send(items);
+     }
+     });*/
 });
 
 app.get('/api/verifyteam/:login/:password', function (request, response)
@@ -149,10 +149,12 @@ app.get('/api/addusertoteam/:user/:hashpass/:team/:hashteam', function (request,
                 {
                     if (item2)
                     {
-                        var u = new Set(item2.users);
-                        u.add(item.login);
-                        var t = new Set(item.teams);
-                        t.add(item2.login);
+                        var u = item2.users;
+                        if (u.contains(item.login))
+                            u.push(item.login);
+                        var t = item.teams;
+                        if (t.contains(item2.login))
+                            t.push(item2.login);
                         collectionTeam.updateOne({'login': request.params.team}, {$set: {'users': u}});
                         collectionUser.updateOne({'login': request.params.user}, {$set: {'teams': t}});
 
