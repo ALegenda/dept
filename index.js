@@ -102,11 +102,11 @@ app.get('/api/userinfo/:userlogin', function (request, response)
     {
         if(items)
         {
-            response(items);
+            response.send(items);
         }
         else
         {
-            response(items);
+            response.send(items);
         }
     });
 });
