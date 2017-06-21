@@ -98,18 +98,17 @@ app.get('/api/userinfo/:userlogin', function (request, response)
 {
     var collection = db.collection('Tranzactions');
     var login = request.params.userlogin;
-    response.send(login);
-    /*var tmp = collection.find({'user': login}, function (err, items)
-     {
-     if(items)
-     {
-     response.send(items);
-     }
-     else
-     {
-     response.send(items);
-     }
-     });*/
+    var tmp = collection.find({'user': login}, function (err, items)
+    {
+        if (items)
+        {
+            response.send(items);
+        }
+        else
+        {
+            response.send(items);
+        }
+    });
 });
 
 app.get('/api/verifyteam/:login/:password', function (request, response)
@@ -121,9 +120,6 @@ app.get('/api/verifyteam/:login/:password', function (request, response)
     {
         if (doc)
         {
-            console.log('kek');
-            console.log(doc.hash);
-
             if (passwordHash.verify(password, doc.hash))
                 response.send(doc.hash);
             else
@@ -150,13 +146,11 @@ app.get('/api/addusertoteam/:user/:hashpass/:team/:hashteam', function (request,
                     if (item2)
                     {
                         var u = item2.users;
-                        if (!(u.indexOf(item.login)>-1))
+                        if (!(u.indexOf(item.login) > -1))
                             u.push(item.login);
-                        console.log(u.indexOf(item.login));
                         var t = item.teams;
-                        if (!(t.indexOf(item2.login)>-1))
+                        if (!(t.indexOf(item2.login) > -1))
                             t.push(item2.login);
-                        console.log(u.indexOf(item2.login));
                         collectionTeam.updateOne({'login': request.params.team}, {$set: {'users': u}});
                         collectionUser.updateOne({'login': request.params.user}, {$set: {'teams': t}});
 
