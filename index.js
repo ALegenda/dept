@@ -98,7 +98,7 @@ app.get('/api/userinfo/:userlogin', function (request, response)
 {
     var collection = db.collection('Tranzactions');
     var login = request.params.userlogin;
-    var tmp = collection.find({'user': login}, function (err, items)
+    var tmp = collection.find({'user': userlogin}, function (err, items)
     {
         if(items)
         {
