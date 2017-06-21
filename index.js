@@ -38,13 +38,10 @@ app.get('/api/adduser/:login/:password', function (request, response)
     {
         if (doc)
         {
-            console.log('kek');
             response.send('this login already exist');
         }
         else
         {
-            console.log('kekos');
-            console.log(doc);
             var password = request.params.password;
             var hash = passwordHash.generate((password));
             collection.insertOne({"login": login, "password": password, "hash": hash, "teams": []});
@@ -61,13 +58,10 @@ app.get('/api/addteam/:login/:password', function (request, response)
     {
         if (doc)
         {
-            console.log('kek');
             response.send('this login already exist');
         }
         else
         {
-            console.log('kekos');
-            console.log(doc);
             var password = request.params.password;
             var hash = passwordHash.generate((password));
             collection.insertOne({"login": login, "password": password, "hash": hash, "users": []});
@@ -100,6 +94,23 @@ app.get('/api/verifyuser/:login/:password', function (request, response)
     });
 });
 
+app.get('/api/userinfo/:userlogin', function (request, response)
+{
+    var collection = db.collection('Tranzactions');
+    var login = request.params.userlogin;
+    var tmp = collection.find({'user': login}, function (err, items)
+    {
+        if(items)
+        {
+            response(items);
+        }
+        else
+        {
+            response(items);
+        }
+    });
+});
+
 app.get('/api/verifyteam/:login/:password', function (request, response)
 {
     var collection = db.collection('Teams');
@@ -128,26 +139,27 @@ app.get('/api/addusertoteam/:user/:hashpass/:team/:hashteam', function (request,
 {
     var collectionUser = db.collection('Users');
     var collectionTeam = db.collection('Teams');
-    collectionUser.findOne({'login': request.params.user, 'hash': request.params.hashpass}, function (err,item)
+    collectionUser.findOne({'login': request.params.user, 'hash': request.params.hashpass}, function (err, item)
     {
         if (item)
         {
-            collectionTeam.findOne({'login': request.params.team, 'hash': request.params.hashteam}, function (err2,item2)
-            {
-                if (item2)
+            collectionTeam.findOne({'login': request.params.team, 'hash': request.params.hashteam},
+                function (err2, item2)
                 {
-                    var u = item2.users;
-                    u.push(item.login);
-                    var t = item.teams;
-                    t.push(item2.login);
-                    collectionTeam.updateOne({'login':request.params.team},{$set:{'users':u}});
-                    collectionUser.updateOne({'login':request.params.user},{$set:{'teams':t}});
+                    if (item2)
+                    {
+                        var u = item2.users;
+                        u.push(item.login);
+                        var t = item.teams;
+                        t.push(item2.login);
+                        collectionTeam.updateOne({'login': request.params.team}, {$set: {'users': u}});
+                        collectionUser.updateOne({'login': request.params.user}, {$set: {'teams': t}});
 
-                    response.send('ok');
-                }
-                else
-                    response.send('I have not this team');
-            });
+                        response.send('ok');
+                    }
+                    else
+                        response.send('I have not this team');
+                });
         }
         else
             response.send('I have not this user');
