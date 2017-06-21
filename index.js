@@ -98,7 +98,8 @@ app.get('/api/userinfo/:userlogin', function (request, response)
 {
     var collection = db.collection('Tranzactions');
     var login = request.params.userlogin;
-    var tmp = collection.find({'user': userlogin}, function (err, items)
+    response.send(login);
+    /*var tmp = collection.find({'user': login}, function (err, items)
     {
         if(items)
         {
@@ -108,7 +109,7 @@ app.get('/api/userinfo/:userlogin', function (request, response)
         {
             response.send(items);
         }
-    });
+    });*/
 });
 
 app.get('/api/verifyteam/:login/:password', function (request, response)
