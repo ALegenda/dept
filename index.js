@@ -150,11 +150,11 @@ app.get('/api/addusertoteam/:user/:hashpass/:team/:hashteam', function (request,
                     if (item2)
                     {
                         var u = item2.users;
-                        if (u.indexOf(item.login)>-1)
+                        if (!(u.indexOf(item.login)>-1))
                             u.push(item.login);
                         console.log(u.indexOf(item.login));
                         var t = item.teams;
-                        if (t.indexOf(item2.login)>-1)
+                        if (!(t.indexOf(item2.login)>-1))
                             t.push(item2.login);
                         console.log(u.indexOf(item2.login));
                         collectionTeam.updateOne({'login': request.params.team}, {$set: {'users': u}});
