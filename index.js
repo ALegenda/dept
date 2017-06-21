@@ -100,6 +100,8 @@ app.get('/api/userinfo/:userlogin', function (request, response)
     var login = request.params.userlogin;
     var tmp = collection.find({'user': login}, function (err, items)
     {
+        response.send('test')
+        /*
         if (items)
         {
             response.send(items);
@@ -107,7 +109,7 @@ app.get('/api/userinfo/:userlogin', function (request, response)
         else
         {
             response.send(items);
-        }
+        }*/
     });
 });
 
