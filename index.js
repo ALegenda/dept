@@ -83,7 +83,7 @@ app.get('/api/verifyuser/:login/:password', function (request, response)
             console.log(doc.hash);
 
             if (passwordHash.verify(password, doc.hash))
-                response.send('Ok');
+                response.send(doc.hash);
             else
                 response.send('Incorrect password');
         }
@@ -125,7 +125,7 @@ app.get('/api/verifyteam/:login/:password', function (request, response)
             console.log(doc.hash);
 
             if (passwordHash.verify(password, doc.hash))
-                response.send(passwordHash.generate(password));
+                response.send(doc.hash);
             else
                 response.send('Incorrect password');
         }
@@ -149,10 +149,10 @@ app.get('/api/addusertoteam/:user/:hashpass/:team/:hashteam', function (request,
                 {
                     if (item2)
                     {
-                        var u = item2.users;
-                        u.push(item.login);
-                        var t = item.teams;
-                        t.push(item2.login);
+                        var u = new Set(item2.users);
+                        u.add(item.login);
+                        var t = new Set(item.teams);
+                        t.add(item2.login);
                         collectionTeam.updateOne({'login': request.params.team}, {$set: {'users': u}});
                         collectionUser.updateOne({'login': request.params.user}, {$set: {'teams': t}});
 
