@@ -16,6 +16,7 @@ mongodb.MongoClient.connect(process.env.MONGODB_URI || url, function (err, datab
 
     db = database;
     console.log('ok');
+
 });
 
 app.set('port', (process.env.PORT || 5000));
@@ -100,7 +101,7 @@ app.get('/api/userinfo/:userlogin', function (request, response)
     var login = request.params.userlogin;
     var tmp = collection.find({'user': login}, function (err, items)
     {
-        response.send('test')
+        response.send(items)
         /*
         if (items)
         {
