@@ -127,8 +127,8 @@ app.get('/api/userto/:userlogin',
     function (request, response)
     {
         var collection = db.collection('Tranzactions');
-        var login = request.params.userlogin;
-        var tmp = collection.find({'aim': login},
+
+        collection.find({'aim': request.params.userlogin},
             function (err, items)
             {
                 if (items)
@@ -137,7 +137,7 @@ app.get('/api/userto/:userlogin',
                 }
                 else
                 {
-                    response.send(login)
+                    response.send("kekos")
                 }
             });
     });
