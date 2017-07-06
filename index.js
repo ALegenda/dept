@@ -128,6 +128,18 @@ app.get('/api/userto/:userlogin',
         });
     });
 
+app.get('/api/teamtranzactions/:team',
+    function (requset, response)
+    {
+        var collection = db.collection('Tranzactions');
+        var team = request.params.team;
+
+        collection.find({'team': team}).toArray(function (err, results)
+        {
+            response.send(results); // output all records
+        });
+    });
+
 app.get('/api/verifyteam/:login/:password',
     function (request, response)
     {
@@ -185,6 +197,15 @@ app.get('/api/addusertoteam/:user/:hashpass/:team/:hashteam',
                     response.send('I have not this user');
             });
 
+    });
+
+app.get('/api/addtranzaction',
+    function (requset, response)
+    {
+        var collection = db.collection('Tranzactions');
+        var params = request.query;
+
+        response.send(params); // output all records
     });
 
 app.listen(app.get('port'),
