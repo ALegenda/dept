@@ -109,43 +109,23 @@ app.get('/api/userfrom/:userlogin',
     {
         var collection = db.collection('Tranzactions');
         var login = request.params.userlogin;
-        var tmp = collection.find({'user': login},
-            function (err, items)
-            {
-                if (items)
-                {
-                    response.send(items);
-                }
-                else
-                {
-                    response.send(login)
-                }
-            });
+
+        collection.find({'user': login}).toArray(function (err, results)
+        {
+            response.send(results); // output all records
+        });
     });
 
 app.get('/api/userto/:userlogin',
     function (request, response)
     {
         var collection = db.collection('Tranzactions');
+        var login = request.params.userlogin;
 
-        collection.findOne({},
-            function (err, items)
-            {
-                response.send(items);
-            });
-
-        /*collection.find({'aim': request.params.userlogin},
-         function (err, items)
-         {
-         if (items)
-         {
-         response.send(items);
-         }
-         else
-         {
-         response.send("kekos")
-         }
-         });*/
+        collection.find({'aim': login}).toArray(function (err, results)
+        {
+            response.send(results); // output all records
+        });
     });
 
 app.get('/api/verifyteam/:login/:password',
