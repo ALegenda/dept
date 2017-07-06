@@ -128,21 +128,25 @@ app.get('/api/userto/:userlogin',
     {
         var collection = db.collection('Tranzactions');
 
-        collection.find({'aim': request.params.userlogin},
+        collection.find({},
             function (err, items)
             {
-                if (items)
-                {
-                    response.send(items);
-                }
-                else
-                {
-                    response.send("kekos")
-                }
+                response.send(items);
             });
+
+        /*collection.find({'aim': request.params.userlogin},
+         function (err, items)
+         {
+         if (items)
+         {
+         response.send(items);
+         }
+         else
+         {
+         response.send("kekos")
+         }
+         });*/
     });
-
-
 
 app.get('/api/verifyteam/:login/:password',
     function (request, response)

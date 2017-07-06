@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ff3d3bb0-65d3-402e-9675-8206a1b23d7f" name="Default" comment="">
+    <list default="true" id="ff3d3bb0-65d3-402e-9675-8206a1b23d7f" name="Default" comment="rewrite two methods">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.js" afterPath="$PROJECT_DIR$/index.js" />
     </list>
@@ -21,8 +21,8 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="139" column="40" lean-forward="false" selection-start-line="139" selection-start-column="40" selection-end-line="139" selection-end-column="40" />
+            <state relative-caret-position="378">
+              <caret line="138" column="10" lean-forward="true" selection-start-line="138" selection-start-column="10" selection-end-line="138" selection-end-column="10" />
               <folding>
                 <element signature="e#367#522#0" expanded="false" />
                 <element signature="e#622#665#0" expanded="false" />
@@ -30,8 +30,8 @@
                 <element signature="e#841#1514#0" expanded="false" />
                 <element signature="e#1596#2269#0" expanded="false" />
                 <element signature="e#2354#3079#0" expanded="false" />
-                <element signature="e#4137#4778#0" expanded="false" />
-                <element signature="e#6391#6467#0" expanded="false" />
+                <element signature="e#4197#4838#0" expanded="false" />
+                <element signature="e#6451#6527#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -220,7 +220,7 @@
       <workItem from="1499084305736" duration="46000" />
       <workItem from="1499163378061" duration="17000" />
       <workItem from="1499343460802" duration="1937000" />
-      <workItem from="1499348750403" duration="598000" />
+      <workItem from="1499348750403" duration="884000" />
     </task>
     <task id="LOCAL-00001" summary="Testing new way of pushing">
       <created>1499344588398</created>
@@ -236,11 +236,18 @@
       <option name="project" value="LOCAL" />
       <updated>1499348940762</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="rewrite two methods">
+      <created>1499349365351</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1499349365351</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40952000" />
+    <option name="totallyTimeSpent" value="41238000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -309,7 +316,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Testing new way of pushing" />
     <MESSAGE value="added two methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="added two methods" />
+    <MESSAGE value="rewrite two methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="rewrite two methods" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -333,8 +341,8 @@
             <element signature="e#841#1514#0" expanded="false" />
             <element signature="e#1596#2269#0" expanded="false" />
             <element signature="e#2354#3079#0" expanded="false" />
-            <element signature="e#4137#4778#0" expanded="false" />
-            <element signature="e#6391#6467#0" expanded="false" />
+            <element signature="e#4197#4838#0" expanded="false" />
+            <element signature="e#6451#6527#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -371,8 +379,8 @@
             <element signature="e#841#1514#0" expanded="false" />
             <element signature="e#1596#2269#0" expanded="false" />
             <element signature="e#2354#3079#0" expanded="false" />
-            <element signature="e#4137#4778#0" expanded="false" />
-            <element signature="e#6391#6467#0" expanded="false" />
+            <element signature="e#4197#4838#0" expanded="false" />
+            <element signature="e#6451#6527#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -409,8 +417,8 @@
             <element signature="e#841#1514#0" expanded="false" />
             <element signature="e#1596#2269#0" expanded="false" />
             <element signature="e#2354#3079#0" expanded="false" />
-            <element signature="e#4137#4778#0" expanded="false" />
-            <element signature="e#6391#6467#0" expanded="false" />
+            <element signature="e#4197#4838#0" expanded="false" />
+            <element signature="e#6451#6527#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -447,8 +455,8 @@
             <element signature="e#841#1514#0" expanded="false" />
             <element signature="e#1596#2269#0" expanded="false" />
             <element signature="e#2354#3079#0" expanded="false" />
-            <element signature="e#4137#4778#0" expanded="false" />
-            <element signature="e#6391#6467#0" expanded="false" />
+            <element signature="e#4197#4838#0" expanded="false" />
+            <element signature="e#6451#6527#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -485,8 +493,8 @@
             <element signature="e#841#1514#0" expanded="false" />
             <element signature="e#1596#2269#0" expanded="false" />
             <element signature="e#2354#3079#0" expanded="false" />
-            <element signature="e#4137#4778#0" expanded="false" />
-            <element signature="e#6391#6467#0" expanded="false" />
+            <element signature="e#4197#4838#0" expanded="false" />
+            <element signature="e#6451#6527#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -523,8 +531,8 @@
             <element signature="e#841#1514#0" expanded="false" />
             <element signature="e#1596#2269#0" expanded="false" />
             <element signature="e#2354#3079#0" expanded="false" />
-            <element signature="e#4137#4778#0" expanded="false" />
-            <element signature="e#6391#6467#0" expanded="false" />
+            <element signature="e#4197#4838#0" expanded="false" />
+            <element signature="e#6451#6527#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -692,8 +700,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="139" column="40" lean-forward="false" selection-start-line="139" selection-start-column="40" selection-end-line="139" selection-end-column="40" />
+        <state relative-caret-position="378">
+          <caret line="138" column="10" lean-forward="true" selection-start-line="138" selection-start-column="10" selection-end-line="138" selection-end-column="10" />
           <folding>
             <element signature="e#367#522#0" expanded="false" />
             <element signature="e#622#665#0" expanded="false" />
@@ -701,8 +709,8 @@
             <element signature="e#841#1514#0" expanded="false" />
             <element signature="e#1596#2269#0" expanded="false" />
             <element signature="e#2354#3079#0" expanded="false" />
-            <element signature="e#4137#4778#0" expanded="false" />
-            <element signature="e#6391#6467#0" expanded="false" />
+            <element signature="e#4197#4838#0" expanded="false" />
+            <element signature="e#6451#6527#0" expanded="false" />
           </folding>
         </state>
       </provider>
