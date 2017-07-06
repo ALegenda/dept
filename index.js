@@ -128,7 +128,7 @@ app.get('/api/userto/:userlogin',
     {
         var collection = db.collection('Tranzactions');
 
-        collection.find({},
+        collection.findOne({},
             function (err, items)
             {
                 response.send(items);
