@@ -104,7 +104,7 @@ app.get('/api/verifyuser/:login/:password',
             });
     });
 
-app.get('/api/userinfo/:userlogin',
+app.get('/api/userfrom/:userlogin',
     function (request, response)
     {
         var collection = db.collection('Tranzactions');
@@ -122,6 +122,27 @@ app.get('/api/userinfo/:userlogin',
                 }
             });
     });
+
+app.get('/api/userto/:userlogin',
+    function (request, response)
+    {
+        var collection = db.collection('Tranzactions');
+        var login = request.params.userlogin;
+        var tmp = collection.find({'aim': login},
+            function (err, items)
+            {
+                if (items)
+                {
+                    response.send(items);
+                }
+                else
+                {
+                    response.send(login)
+                }
+            });
+    });
+
+
 
 app.get('/api/verifyteam/:login/:password',
     function (request, response)
