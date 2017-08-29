@@ -6,7 +6,8 @@ var db;
 var ObjectID = require('mongodb').ObjectID;
 var url = "mongodb://TomKuper:dbpassword1234@ds121212.mlab.com:21212/heroku_w1ckvk1j";
 
-mongodb.MongoClient.connect(process.env.MONGODB_URI || url,
+mongodb.MongoClient.connect(
+    process.env.MONGODB_URI || url,
     function (err, database)
     {
         if (err)
@@ -18,23 +19,29 @@ mongodb.MongoClient.connect(process.env.MONGODB_URI || url,
         db = database;
         console.log('ok');
 
-    });
+    }
+);
 
 app.set('port', (process.env.PORT || 5000));
 
-app.get('/',
+app.get(
+    '/',
     function (request, response)
     {
         response.send('All right');
-    });
+    }
+);
 
-app.get('/kek',
+app.get(
+    '/kek',
     function (request, response)
     {
         response.send('kek');
-    });
+    }
+);
 
-app.get('/api/adduser/:login/:password',
+app.get(
+    '/api/adduser/:login/:password',
     function (request, response)
     {
         var collection = db.collection('Users');
@@ -54,9 +61,11 @@ app.get('/api/adduser/:login/:password',
                     response.send(hash);
                 }
             });
-    });
+    }
+);
 
-app.get('/api/addteam/:login/:password',
+app.get(
+    '/api/addteam/:login/:password',
     function (request, response)
     {
         var collection = db.collection('Teams');
@@ -76,71 +85,84 @@ app.get('/api/addteam/:login/:password',
                     response.send(hash);
                 }
             });
-    });
+    }
+);
 
-app.get('/api/verifyuser/:login/:password',
+app.get(
+    '/api/verifyuser',
     function (request, response)
     {
+        var params = request.query;
         var collection = db.collection('Users');
-        var login = request.params.login;
-        var password = request.params.password;
-        var tmp = collection.findOne({'login': login}).then(
-            function (doc)
-            {
-                if (doc)
+        var login = params['login'];
+        var password = params['password'];
+        if (params['password'] !== params['psw-repeat'])
+            response.send('Passwords  can\'t be different');
+        else
+        {
+            var tmp = collection.findOne({'login': login}).then(
+                function (doc)
                 {
-                    console.log('kek');
-                    console.log(doc.hash);
-
-                    if (passwordHash.verify(password, doc.hash))
-                        response.send(doc.hash);
+                    if (doc)
+                    {
+                        if (passwordHash.verify(password, doc.hash))
+                            response.send(passwordHash.generate(doc.login));
+                        else
+                            response.send('Incorrect password');
+                    }
                     else
-                        response.send('Incorrect password');
-                }
-                else
-                {
-                    response.send('I have not this user');
-                }
-            });
-    });
+                    {
+                        response.send('I  have not this user');
+                    }
+                });
+        }
+    }
+);
 
-app.get('/api/userfrom/:userlogin',
+app.get(
+    '/api/userfrom/:userlogin',
     function (request, response)
     {
         var collection = db.collection('Tranzactions');
         var login = request.params.userlogin;
 
         collection.find({'user': login}).toArray(function (err, results)
-        {
-            response.send(results); // output all records
-        });
-    });
+                                                 {
+                                                     response.send(results); // output all records
+                                                 });
+    }
+);
 
-app.get('/api/userto/:userlogin',
+app.get(
+    '/api/userto/:userlogin',
     function (request, response)
     {
         var collection = db.collection('Tranzactions');
         var login = request.params.userlogin;
 
         collection.find({'aim': login}).toArray(function (err, results)
-        {
-            response.send(results); // output all records
-        });
-    });
+                                                {
+                                                    response.send(results); // output all records
+                                                });
+    }
+);
 
-app.get('/api/teamtranzactions/:team',
+app.get(
+    '/api/teamtranzactions/:team',
     function (requset, response)
     {
         var collection = db.collection('Tranzactions');
         var team = request.params.team;
 
         collection.find({'team': team}).toArray(function (err, results)
-        {
-            response.send(results); // output all records
-        });
-    });
+                                                {
+                                                    response.send(results); // output all records
+                                                });
+    }
+);
 
-app.get('/api/verifyteam/:login/:password',
+app.get(
+    '/api/verifyteam/:login/:password',
     function (request, response)
     {
         var collection = db.collection('Teams');
@@ -161,19 +183,23 @@ app.get('/api/verifyteam/:login/:password',
                     response.send('I have not this team');
                 }
             });
-    });
+    }
+);
 
-app.get('/api/addusertoteam/:user/:hashpass/:team/:hashteam',
+app.get(
+    '/api/addusertoteam/:user/:hashpass/:team/:hashteam',
     function (request, response)
     {
         var collectionUser = db.collection('Users');
         var collectionTeam = db.collection('Teams');
-        collectionUser.findOne({'login': request.params.user, 'hash': request.params.hashpass},
+        collectionUser.findOne(
+            {'login': request.params.user, 'hash': request.params.hashpass},
             function (err, item)
             {
                 if (item)
                 {
-                    collectionTeam.findOne({'login': request.params.team, 'hash': request.params.hashteam},
+                    collectionTeam.findOne(
+                        {'login': request.params.team, 'hash': request.params.hashteam},
                         function (err2, item2)
                         {
                             if (item2)
@@ -191,28 +217,35 @@ app.get('/api/addusertoteam/:user/:hashpass/:team/:hashteam',
                             }
                             else
                                 response.send('I have not this team');
-                        });
+                        }
+                    );
                 }
                 else
                     response.send('I have not this user');
-            });
+            }
+        );
 
-    });
+    }
+);
 
-app.get('/api/addtranzaction',
+app.get(
+    '/api/addtranzaction',
     function (requset, response)
     {
         var collection = db.collection('Tranzactions');
         var params = request.query;
 
         response.send(params); // output all records
-    });
+    }
+);
 
-app.listen(app.get('port'),
+app.listen(
+    app.get('port'),
     function ()
     {
         console.log('Node app is running on port', app.get('port'));
-    });
+    }
+);
 
 //app.listen(3000);
 

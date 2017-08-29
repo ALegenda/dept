@@ -15,28 +15,44 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="130" column="36" lean-forward="false" selection-start-line="130" selection-start-column="36" selection-end-line="130" selection-end-column="36" />
-              <folding>
-                <element signature="e#367#522#0" expanded="false" />
-                <element signature="e#622#665#0" expanded="false" />
-                <element signature="e#722#759#0" expanded="false" />
-                <element signature="e#841#1514#0" expanded="false" />
-                <element signature="e#1596#2269#0" expanded="false" />
-                <element signature="e#2354#3079#0" expanded="false" />
-                <element signature="e#3156#3419#0" expanded="false" />
-                <element signature="e#3494#3756#0" expanded="false" />
-                <element signature="e#3836#4092#0" expanded="false" />
-                <element signature="e#4177#4818#0" expanded="false" />
-                <element signature="e#4921#6379#0" expanded="false" />
-                <element signature="e#6656#6732#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="378">
+              <caret line="99" column="38" lean-forward="false" selection-start-line="99" selection-start-column="38" selection-end-line="99" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package-lock.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package-lock.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="8" column="6" lean-forward="false" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="567">
+              <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -49,14 +65,21 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/app.json" />
+        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/index.js" />
       </list>
     </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>false</service-enabled>
+    <exe-path />
+    <annotation-enable>false</annotation-enable>
+    <other-services-enabled>false</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
@@ -64,7 +87,7 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-9" />
     <option name="y" value="-9" />
     <option name="width" value="1938" />
@@ -88,26 +111,13 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane" />
       <pane id="Scope" />
       <pane id="Scratches" />
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dept" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dept" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../octopus" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
@@ -130,8 +140,13 @@
     </option>
   </component>
   <component name="RunManager" selected="Node.js.index.js">
-    <configuration default="false" name="index.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="index.js" working-dir="$PROJECT_DIR$">
-      <method />
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <method />
@@ -170,15 +185,6 @@
       <option name="filePath" />
       <method />
     </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
-      <envs />
-      <method />
-    </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
       <command value="run" />
       <scripts />
@@ -199,9 +205,7 @@
       <recursive>false</recursive>
       <method />
     </configuration>
-    <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="Node.js.index.js" />
-    </list>
+    <configuration name="index.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="index.js" working-dir="$PROJECT_DIR$" />
     <recent_temporary>
       <list size="1">
         <item index="0" class="java.lang.String" itemvalue="Node.js.index.js" />
@@ -225,6 +229,7 @@
       <workItem from="1499163378061" duration="17000" />
       <workItem from="1499343460802" duration="1937000" />
       <workItem from="1499348750403" duration="5350000" />
+      <workItem from="1504013122949" duration="1389000" />
     </task>
     <task id="LOCAL-00001" summary="Testing new way of pushing">
       <created>1499344588398</created>
@@ -272,7 +277,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45704000" />
+    <option name="totallyTimeSpent" value="48330000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -284,14 +289,13 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="true" />
+    <frame x="-9" y="-9" width="2274" height="1472" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24801692" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21059722" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2219662" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32949308" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24986681" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -307,7 +311,7 @@
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="processedProjectFiles" value="true" />
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -357,160 +361,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#367#522#0" expanded="false" />
-            <element signature="e#622#665#0" expanded="false" />
-            <element signature="e#722#759#0" expanded="false" />
-            <element signature="e#841#1514#0" expanded="false" />
-            <element signature="e#1596#2269#0" expanded="false" />
-            <element signature="e#2354#3079#0" expanded="false" />
-            <element signature="e#3156#3419#0" expanded="false" />
-            <element signature="e#3494#3756#0" expanded="false" />
-            <element signature="e#3836#4092#0" expanded="false" />
-            <element signature="e#4177#4818#0" expanded="false" />
-            <element signature="e#4921#6379#0" expanded="false" />
-            <element signature="e#6656#6732#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package-lock.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="6" lean-forward="false" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2142">
-          <caret line="102" column="27" lean-forward="false" selection-start-line="102" selection-start-column="27" selection-end-line="102" selection-end-column="27" />
-          <folding>
-            <element signature="e#367#522#0" expanded="false" />
-            <element signature="e#622#665#0" expanded="false" />
-            <element signature="e#722#759#0" expanded="false" />
-            <element signature="e#841#1514#0" expanded="false" />
-            <element signature="e#1596#2269#0" expanded="false" />
-            <element signature="e#2354#3079#0" expanded="false" />
-            <element signature="e#3156#3419#0" expanded="false" />
-            <element signature="e#3494#3756#0" expanded="false" />
-            <element signature="e#3836#4092#0" expanded="false" />
-            <element signature="e#4177#4818#0" expanded="false" />
-            <element signature="e#4921#6379#0" expanded="false" />
-            <element signature="e#6656#6732#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package-lock.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="6" lean-forward="false" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2142">
-          <caret line="102" column="27" lean-forward="false" selection-start-line="102" selection-start-column="27" selection-end-line="102" selection-end-column="27" />
-          <folding>
-            <element signature="e#367#522#0" expanded="false" />
-            <element signature="e#622#665#0" expanded="false" />
-            <element signature="e#722#759#0" expanded="false" />
-            <element signature="e#841#1514#0" expanded="false" />
-            <element signature="e#1596#2269#0" expanded="false" />
-            <element signature="e#2354#3079#0" expanded="false" />
-            <element signature="e#3156#3419#0" expanded="false" />
-            <element signature="e#3494#3756#0" expanded="false" />
-            <element signature="e#3836#4092#0" expanded="false" />
-            <element signature="e#4177#4818#0" expanded="false" />
-            <element signature="e#4921#6379#0" expanded="false" />
-            <element signature="e#6656#6732#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package-lock.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="6" lean-forward="false" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2142">
-          <caret line="102" column="27" lean-forward="false" selection-start-line="102" selection-start-column="27" selection-end-line="102" selection-end-column="27" />
-          <folding>
-            <element signature="e#367#522#0" expanded="false" />
-            <element signature="e#622#665#0" expanded="false" />
-            <element signature="e#722#759#0" expanded="false" />
-            <element signature="e#841#1514#0" expanded="false" />
-            <element signature="e#1596#2269#0" expanded="false" />
-            <element signature="e#2354#3079#0" expanded="false" />
-            <element signature="e#3156#3419#0" expanded="false" />
-            <element signature="e#3494#3756#0" expanded="false" />
-            <element signature="e#3836#4092#0" expanded="false" />
-            <element signature="e#4177#4818#0" expanded="false" />
-            <element signature="e#4921#6379#0" expanded="false" />
-            <element signature="e#6656#6732#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -529,20 +379,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1932">
           <caret line="164" column="0" lean-forward="true" selection-start-line="164" selection-start-column="0" selection-end-line="164" selection-end-column="0" />
-          <folding>
-            <element signature="e#367#522#0" expanded="false" />
-            <element signature="e#622#665#0" expanded="false" />
-            <element signature="e#722#759#0" expanded="false" />
-            <element signature="e#841#1514#0" expanded="false" />
-            <element signature="e#1596#2269#0" expanded="false" />
-            <element signature="e#2354#3079#0" expanded="false" />
-            <element signature="e#3156#3419#0" expanded="false" />
-            <element signature="e#3494#3756#0" expanded="false" />
-            <element signature="e#3836#4092#0" expanded="false" />
-            <element signature="e#4177#4818#0" expanded="false" />
-            <element signature="e#4921#6379#0" expanded="false" />
-            <element signature="e#6656#6732#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -571,20 +407,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="5" column="93" lean-forward="false" selection-start-line="5" selection-start-column="93" selection-end-line="5" selection-end-column="93" />
-          <folding>
-            <element signature="e#367#522#0" expanded="false" />
-            <element signature="e#622#665#0" expanded="false" />
-            <element signature="e#722#759#0" expanded="false" />
-            <element signature="e#841#1514#0" expanded="false" />
-            <element signature="e#1596#2269#0" expanded="false" />
-            <element signature="e#2354#3079#0" expanded="false" />
-            <element signature="e#3156#3419#0" expanded="false" />
-            <element signature="e#3494#3756#0" expanded="false" />
-            <element signature="e#3836#4092#0" expanded="false" />
-            <element signature="e#4177#4818#0" expanded="false" />
-            <element signature="e#4921#6379#0" expanded="false" />
-            <element signature="e#6656#6732#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -595,38 +417,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../Курсач/Исходники/MedXServerSide/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="17" column="3" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../../Курсач/Исходники/MedXServerSide/index.js" />
     <entry file="file://$PROJECT_DIR$/node_modules/express/lib/router/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="280" column="21" lean-forward="false" selection-start-line="280" selection-start-column="21" selection-end-line="280" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package-lock.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="6" lean-forward="false" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -749,24 +544,367 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../easy-node-authentication/config/passport.js" />
+    <entry file="file://$PROJECT_DIR$/../easy-node-authentication/config/auth.js" />
+    <entry file="file://$PROJECT_DIR$/../easy-node-authentication/app/models/user.js" />
+    <entry file="file://$PROJECT_DIR$/../easy-node-authentication/config/database.js" />
+    <entry file="file://$PROJECT_DIR$/../easy-node-authentication/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-551">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="6" lean-forward="false" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app.js" />
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="130" column="36" lean-forward="false" selection-start-line="130" selection-start-column="36" selection-end-line="130" selection-end-column="36" />
-          <folding>
-            <element signature="e#367#522#0" expanded="false" />
-            <element signature="e#622#665#0" expanded="false" />
-            <element signature="e#722#759#0" expanded="false" />
-            <element signature="e#841#1514#0" expanded="false" />
-            <element signature="e#1596#2269#0" expanded="false" />
-            <element signature="e#2354#3079#0" expanded="false" />
-            <element signature="e#3156#3419#0" expanded="false" />
-            <element signature="e#3494#3756#0" expanded="false" />
-            <element signature="e#3836#4092#0" expanded="false" />
-            <element signature="e#4177#4818#0" expanded="false" />
-            <element signature="e#4921#6379#0" expanded="false" />
-            <element signature="e#6656#6732#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="339">
+          <caret line="33" column="36" lean-forward="false" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html" />
+    <entry file="file://$PROJECT_DIR$/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="6" lean-forward="false" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2142">
+          <caret line="102" column="27" lean-forward="false" selection-start-line="102" selection-start-column="27" selection-end-line="102" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="6" lean-forward="false" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2142">
+          <caret line="102" column="27" lean-forward="false" selection-start-line="102" selection-start-column="27" selection-end-line="102" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="6" lean-forward="false" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2142">
+          <caret line="102" column="27" lean-forward="false" selection-start-line="102" selection-start-column="27" selection-end-line="102" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="6" lean-forward="false" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1932">
+          <caret line="164" column="0" lean-forward="true" selection-start-line="164" selection-start-column="0" selection-end-line="164" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="6" lean-forward="true" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="93" lean-forward="false" selection-start-line="5" selection-start-column="93" selection-end-line="5" selection-end-column="93" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/express/lib/application.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="617" column="23" lean-forward="false" selection-start-line="617" selection-start-column="23" selection-end-line="617" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../Курсач/Исходники/MedXServerSide/index.js" />
+    <entry file="file://$PROJECT_DIR$/node_modules/express/lib/router/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="280" column="21" lean-forward="false" selection-start-line="280" selection-start-column="21" selection-end-line="280" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="6" lean-forward="false" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JavaScript-modules-diagram/C:/Anton/NodeJs/dept">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JavaScript-modules-diagram</ID>
+          <OriginalElement>$PROJECT_DIR$</OriginalElement>
+          <nodes>
+            <node x="" y="">$PROJECT_DIR$/node_modules/mongodb/lib/admin.js#Define#59;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/admin.js#assign#152;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/admin.js#authenticate#181;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/admin.js#shallowClone#108;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/admin.js#toError#29;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/mongodb/lib/aggregation_cursor.js#AggregationCursor#2325;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/aggregation_cursor.js#CoreCursor#227;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/aggregation_cursor.js#Define#192;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/aggregation_cursor.js#MongoError#72;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/aggregation_cursor.js#Readable#122;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/aggregation_cursor.js#inherits#30;C:/Program Files/JetBrains/WebStorm 2017.1.4/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/EcmaScript.js#prototype#960;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/mongodb/lib/apm.js#AggregationCursor#113;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/apm.js#Collection#445;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/apm.js#CommandCursor#168;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/apm.js#Cursor#413;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/apm.js#Db#485;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/apm.js#EventEmitter#19;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/apm.js#GridStore#367;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/apm.js#Instrumentation#9130;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/apm.js#OrderedBulkOperation#238;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/apm.js#UnorderedBulkOperation#313;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/apm.js#inherits#64;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/apm.js#prototypes#7850;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/express/lib/application.js#Router#274;C:/Anton/NodeJs/dept/node_modules/express/lib/application.js#View#485;C:/Anton/NodeJs/dept/node_modules/express/lib/application.js#compileETag#557;C:/Anton/NodeJs/dept/node_modules/express/lib/application.js#compileQueryParser#614;C:/Anton/NodeJs/dept/node_modules/express/lib/application.js#compileTrust#672;C:/Anton/NodeJs/dept/node_modules/express/lib/application.js#debug#432;C:/Anton/NodeJs/dept/node_modules/express/lib/application.js#deprecate#709;C:/Anton/NodeJs/dept/node_modules/express/lib/application.js#finalhandler#230;C:/Anton/NodeJs/dept/node_modules/express/lib/application.js#flatten#753;C:/Anton/NodeJs/dept/node_modules/express/lib/application.js#http#515;C:/Anton/NodeJs/dept/node_modules/express/lib/application.js#merge#793;C:/Anton/NodeJs/dept/node_modules/express/lib/application.js#methods#308;C:/Anton/NodeJs/dept/node_modules/express/lib/application.js#middleware#342;C:/Anton/NodeJs/dept/node_modules/express/lib/application.js#query#389;C:/Anton/NodeJs/dept/node_modules/express/lib/application.js#resolve#839;C:/Anton/NodeJs/dept/node_modules/express/lib/application.js#setPrototyeOf#868;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/array-flatten/array-flatten.js</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/mongodb/lib/authenticate.js#MongoError#123;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/authenticate.js#handleCallback#72;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/authenticate.js#shallowClone#19;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/mongodb/boot_auth.js#ReplSetManager#21;C:/Anton/NodeJs/dept/node_modules/mongodb/boot_auth.js#f#72;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/mongodb/lib/gridfs/chunk.js#Binary#28;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/gridfs/chunk.js#ObjectID#78;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/mongodb/lib/collection.js#AggregationCursor#258;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/collection.js#Code#189;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/collection.js#Collection#3660;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/collection.js#CommandCursor#857;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/collection.js#CoreReadPreference#814;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/collection.js#Cursor#940;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/collection.js#Define#905;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/collection.js#Long#144;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/collection.js#MongoError#327;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/collection.js#ObjectID#95;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/collection.js#ReadPreference#743;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/collection.js#assign#1066;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/collection.js#checkCollectionName#41;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/collection.js#decorateCommand#637;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/collection.js#f#231;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/collection.js#formattedOrderClause#699;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/collection.js#handleCallback#581;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/collection.js#isObject#428;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/collection.js#mergeOptions#1111;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/collection.js#normalizeHintField#522;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/collection.js#ordered#1017;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/collection.js#shallowClone#381;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/collection.js#toError#470;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/collection.js#unordered#973;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/mongodb/lib/command_cursor.js#CommandCursor#2336;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/command_cursor.js#CoreCursor#277;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/command_cursor.js#CoreReadPreference#335;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/command_cursor.js#Define#242;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/command_cursor.js#MongoError#122;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/command_cursor.js#ReadPreference#59;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/command_cursor.js#Readable#172;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/command_cursor.js#inherits#30;C:/Program Files/JetBrains/WebStorm 2017.1.4/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/EcmaScript.js#prototype#960;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/mongodb/lib/bulk/common.js#Long#26;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/bulk/common.js#Timestamp#75;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/mongodb/lib/cursor.js#CoreCursor#443;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/cursor.js#CoreReadPreference#542;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/cursor.js#Cursor#5329;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/cursor.js#Define#395;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/cursor.js#Map#484;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/cursor.js#MongoError#275;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/cursor.js#ReadPreference#212;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/cursor.js#Readable#355;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/cursor.js#f#63;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/cursor.js#formattedOrderClause#113;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/cursor.js#handleCallback#174;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/cursor.js#inherits#30;C:/Program Files/JetBrains/WebStorm 2017.1.4/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/EcmaScript.js#prototype#960;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/mongodb/lib/db.js#Admin#656;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/db.js#Code#694;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/db.js#Collection#975;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/db.js#CommandCursor#378;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/db.js#CoreReadPreference#753;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/db.js#Db#6171;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/db.js#Define#896;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/db.js#EventEmitter#34;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/db.js#Logger#940;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/db.js#MongoError#809;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/db.js#ObjectID#859;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/db.js#ReadPreference#575;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/db.js#assign#1137;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/db.js#authenticate#69;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/db.js#crypto#1016;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/db.js#debugOptions#342;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/db.js#f#629;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/db.js#filterOptions#497;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/db.js#getSingleProperty#174;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/db.js#handleCallback#443;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/db.js#inherits#125;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/db.js#mergeOptionsAndWriteConcern#1077;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/db.js#parseIndexOptions#286;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/db.js#shallowClone#230;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/db.js#toError#544;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/mongodb/lib/gridfs-stream/download.js#stream#4;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/gridfs-stream/download.js#util#34;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/ejs/ejs.js#_VERSION_STRING#2271;C:/Anton/NodeJs/dept/node_modules/ejs/ejs.js#_process#34571;C:/Anton/NodeJs/dept/node_modules/ejs/ejs.js#fs#2137;C:/Anton/NodeJs/dept/node_modules/ejs/ejs.js#path#2161;C:/Anton/NodeJs/dept/node_modules/ejs/ejs.js#utils#2189;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/ejs/lib/ejs.js#_VERSION_STRING#1427;C:/Anton/NodeJs/dept/node_modules/ejs/lib/ejs.js#fs#1293;C:/Anton/NodeJs/dept/node_modules/ejs/lib/ejs.js#path#1317;C:/Anton/NodeJs/dept/node_modules/ejs/lib/ejs.js#utils#1345;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/ejs/ejs.min.js#_VERSION_STRING#975;C:/Anton/NodeJs/dept/node_modules/ejs/ejs.min.js#_process#16182;C:/Anton/NodeJs/dept/node_modules/ejs/ejs.min.js#fs#856;C:/Anton/NodeJs/dept/node_modules/ejs/ejs.min.js#path#877;C:/Anton/NodeJs/dept/node_modules/ejs/ejs.min.js#utils#902;</node>
+            <node x="" y="">Promise;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/express/lib/express.js#EventEmitter#233;C:/Anton/NodeJs/dept/node_modules/express/lib/express.js#Route#349;C:/Anton/NodeJs/dept/node_modules/express/lib/express.js#Router#388;C:/Anton/NodeJs/dept/node_modules/express/lib/express.js#index.js#1513;C:/Anton/NodeJs/dept/node_modules/express/lib/express.js#mixin#269;C:/Anton/NodeJs/dept/node_modules/express/lib/express.js#proto#311;C:/Anton/NodeJs/dept/node_modules/express/lib/express.js#query.js#1465;C:/Anton/NodeJs/dept/node_modules/express/lib/express.js#req#422;C:/Anton/NodeJs/dept/node_modules/express/lib/express.js#res#454;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/mongodb/lib/gridfs/grid_store.js#Buffer#1455;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/gridfs/grid_store.js#Chunk#1314;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/gridfs/grid_store.js#Collection#1483;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/gridfs/grid_store.js#Define#1602;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/gridfs/grid_store.js#Duplex#1753;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/gridfs/grid_store.js#GridStore#5620;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/gridfs/grid_store.js#MongoError#1650;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/gridfs/grid_store.js#ObjectID#1355;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/gridfs/grid_store.js#Promise#56481;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/gridfs/grid_store.js#ReadPreference#1396;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/gridfs/grid_store.js#f#1550;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/gridfs/grid_store.js#fs#1524;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/gridfs/grid_store.js#shallowClone#1805;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/gridfs/grid_store.js#util#1576;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/parseurl/index.js</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/fresh/index.js</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/statuses/index.js</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/cookie/index.js</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/encodeurl/index.js</node>
+            <node x="" y="">sign;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/accepts/index.js</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/merge-descriptors/index.js</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/express/index.js#express.js#198;</node>
+            <node x="" y="">BSON;C:/Anton/NodeJs/dept/node_modules/mongodb/index.js#BSON.Binary#1067;C:/Anton/NodeJs/dept/node_modules/mongodb/index.js#BSON.Code#1102;C:/Anton/NodeJs/dept/node_modules/mongodb/index.js#BSON.Long#1263;C:/Anton/NodeJs/dept/node_modules/mongodb/index.js#BSON.Map#1133;C:/Anton/NodeJs/dept/node_modules/mongodb/index.js#BSON.ObjectID#1364;C:/Anton/NodeJs/dept/node_modules/mongodb/index.js#BSON.Timestamp#1477;Connection;Cursor;Logger;MongoError;Mongos;ObjectID;ReadPreference;ReplSet;Server;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/content-disposition/index.js</node>
+            <node x="" y="">$PROJECT_DIR$/index.js#ObjectID#157;C:/Anton/NodeJs/dept/index.js#express#4;C:/Anton/NodeJs/dept/index.js#mongodb#59;C:/Anton/NodeJs/dept/index.js#passwordHash#93;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/express/lib/router/index.js#Layer#262;C:/Anton/NodeJs/dept/node_modules/express/lib/router/index.js#Route#230;C:/Anton/NodeJs/dept/node_modules/express/lib/router/index.js#debug#364;C:/Anton/NodeJs/dept/node_modules/express/lib/router/index.js#deprecate#412;C:/Anton/NodeJs/dept/node_modules/express/lib/router/index.js#flatten#456;C:/Anton/NodeJs/dept/node_modules/express/lib/router/index.js#methods#294;C:/Anton/NodeJs/dept/node_modules/express/lib/router/index.js#mixin#328;C:/Anton/NodeJs/dept/node_modules/express/lib/router/index.js#parseUrl#496;C:/Anton/NodeJs/dept/node_modules/express/lib/router/index.js#setPrototypeOf#532;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/proxy-addr/index.js</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/methods/index.js</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/qs/lib/index.js</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/depd/index.js</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/range-parser/index.js</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/escape-html/index.js</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/mongodb/index.js#Connection#1007;C:/Anton/NodeJs/dept/node_modules/mongodb/index.js#Instrumentation#53;C:/Anton/NodeJs/dept/node_modules/mongodb/index.js#MongoClient#314;C:/Anton/NodeJs/dept/node_modules/mongodb/index.js#ObjectID#1364;C:/Anton/NodeJs/dept/node_modules/mongodb/index.js#Server#950;C:/Anton/NodeJs/dept/node_modules/mongodb/index.js#admin.js#290;C:/Anton/NodeJs/dept/node_modules/mongodb/index.js#chunk.js#710;C:/Anton/NodeJs/dept/node_modules/mongodb/index.js#collection.js#422;C:/Anton/NodeJs/dept/node_modules/mongodb/index.js#connect#139;C:/Anton/NodeJs/dept/node_modules/mongodb/index.js#core#19;C:/Anton/NodeJs/dept/node_modules/mongodb/index.js#cursor.js#788;C:/Anton/NodeJs/dept/node_modules/mongodb/index.js#db.js#380;C:/Anton/NodeJs/dept/node_modules/mongodb/index.js#grid_store.js#658;C:/Anton/NodeJs/dept/node_modules/mongodb/index.js#index.js#836;C:/Anton/NodeJs/dept/node_modules/mongodb/index.js#mongo_client.js#336;C:/Anton/NodeJs/dept/node_modules/mongodb/index.js#mongos.js#554;C:/Anton/NodeJs/dept/node_modules/mongodb/index.js#read_preference.js#604;C:/Anton/NodeJs/dept/node_modules/mongodb/index.js#replset.js#511;C:/Anton/NodeJs/dept/node_modules/mongodb/index.js#server.js#468;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/etag/index.js</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/serve-static/index.js</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/on-finished/index.js</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/path-to-regexp/index.js</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/setprototypeof/index.js</node>
+            <node x="" y="">mime;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/utils-merge/index.js</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/vary/index.js</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/mongodb/lib/gridfs-stream/index.js#Emitter#14;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/gridfs-stream/index.js#GridFSBucketReadStream#50;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/gridfs-stream/index.js#GridFSBucketWriteStream#102;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/gridfs-stream/index.js#Promise#1898;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/gridfs-stream/index.js#shallowClone#168;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/gridfs-stream/index.js#toError#216;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/gridfs-stream/index.js#util#249;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/content-type/index.js</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/type-is/index.js</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/finalhandler/index.js</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/debug/src/index.js</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/express/lib/middleware/init.js#setPrototyeOf#230;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/mongodb/insert_bench.js#MongoClient#18;C:/Anton/NodeJs/dept/node_modules/mongodb/insert_bench.js#assert#47;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/express/lib/router/layer.js#debug#274;C:/Anton/NodeJs/dept/node_modules/express/lib/router/layer.js#pathRegexp#230;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/mongodb/lib/metadata.js#f#8;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/mongodb/lib/mongo_client.js#Db#427;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/mongo_client.js#Define#246;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/mongo_client.js#EventEmitter#171;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/mongo_client.js#Logger#340;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/mongo_client.js#MongoError#388;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/mongo_client.js#Mongos#88;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/mongo_client.js#Promise#14466;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/mongo_client.js#ReadPreference#281;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/mongo_client.js#ReplSet#121;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/mongo_client.js#Server#55;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/mongo_client.js#assign#492;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/mongo_client.js#authenticate#573;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/mongo_client.js#connect#13893;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/mongo_client.js#f#456;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/mongo_client.js#inherits#217;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/mongo_client.js#parse#19;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/mongo_client.js#shallowClone#537;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/mongodb/lib/mongos.js#AggregationCursor#341;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/mongos.js#CMongos#273;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/mongos.js#CommandCursor#397;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/mongos.js#Cursor#308;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/mongos.js#Define#445;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/mongos.js#EventEmitter#34;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/mongos.js#MAX_JS_INT#571;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/mongos.js#MongoError#224;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/mongos.js#Server#480;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/mongos.js#ServerCapabilities#161;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/mongos.js#Store#521;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/mongos.js#driverVersion#899;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/mongos.js#f#113;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/mongos.js#filterOptions#680;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/mongos.js#getReadPreference#788;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/mongos.js#inherits#80;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/mongos.js#mergeOptions#732;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/mongos.js#os#829;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/mongos.js#translateOptions#624;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/password-hash/bin/nodepw#colors#956;C:/Anton/NodeJs/dept/node_modules/password-hash/bin/nodepw#passwordHash#267;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/mongodb/lib/bulk/ordered.js#BSON#357;C:/Program Files/JetBrains/WebStorm 2017.1.4/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/EcmaScript.js#Bulk.prototype#960;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/bulk/ordered.js#Define#315;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/bulk/ordered.js#ObjectID#273;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/bulk/ordered.js#OrderedBulkOperation#16439;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/bulk/ordered.js#Promise#7104;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/bulk/ordered.js#common#19;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/bulk/ordered.js#handleCallback#141;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/bulk/ordered.js#toError#93;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/bulk/ordered.js#utils#51;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/mongodb/package.json#version#2327;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/ejs/package.json#version#1821;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/password-hash/lib/password-hash.js#crypto#4;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/express/lib/middleware/query.js#parseUrl#218;C:/Anton/NodeJs/dept/node_modules/express/lib/middleware/query.js#qs#254;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/mongodb/lib/read_preference.js</node>
+            <node x="" y="">Duplex;Readable;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/mongodb/lib/replset.js#AggregationCursor#206;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/replset.js#CReplSet#574;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/replset.js#CommandCursor#262;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/replset.js#CoreReadPreference#631;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/replset.js#Cursor#173;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/replset.js#Define#528;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/replset.js#EventEmitter#34;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/replset.js#MAX_JS_INT#687;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/replset.js#MongoError#373;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/replset.js#ReadPreference#310;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/replset.js#Server#140;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/replset.js#ServerCapabilities#433;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/replset.js#Store#491;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/replset.js#driverVersion#2210;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/replset.js#f#113;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/replset.js#filterOptions#796;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/replset.js#getReadPreference#853;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/replset.js#inherits#80;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/replset.js#mergeOptions#909;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/replset.js#os#945;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/replset.js#translateOptions#740;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/express/lib/request.js#accepts#230;C:/Anton/NodeJs/dept/node_modules/express/lib/request.js#deprecate#264;C:/Anton/NodeJs/dept/node_modules/express/lib/request.js#fresh#401;C:/Anton/NodeJs/dept/node_modules/express/lib/request.js#http#373;C:/Anton/NodeJs/dept/node_modules/express/lib/request.js#isIP#315;C:/Anton/NodeJs/dept/node_modules/express/lib/request.js#parse#473;C:/Anton/NodeJs/dept/node_modules/express/lib/request.js#parseRange#431;C:/Anton/NodeJs/dept/node_modules/express/lib/request.js#proxyaddr#506;C:/Anton/NodeJs/dept/node_modules/express/lib/request.js#typeis#340;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/express/lib/response.js#contentDisposition#194;C:/Anton/NodeJs/dept/node_modules/express/lib/response.js#cookie#793;C:/Anton/NodeJs/dept/node_modules/express/lib/response.js#deprecate#251;C:/Anton/NodeJs/dept/node_modules/express/lib/response.js#encodeUrl#295;C:/Anton/NodeJs/dept/node_modules/express/lib/response.js#escapeHtml#333;C:/Anton/NodeJs/dept/node_modules/express/lib/response.js#http#374;C:/Anton/NodeJs/dept/node_modules/express/lib/response.js#isAbsolute#415;C:/Anton/NodeJs/dept/node_modules/express/lib/response.js#merge#554;C:/Anton/NodeJs/dept/node_modules/express/lib/response.js#normalizeType#651;C:/Anton/NodeJs/dept/node_modules/express/lib/response.js#normalizeTypes#706;C:/Anton/NodeJs/dept/node_modules/express/lib/response.js#onFinished#450;C:/Anton/NodeJs/dept/node_modules/express/lib/response.js#path#491;C:/Anton/NodeJs/dept/node_modules/express/lib/response.js#send#825;C:/Anton/NodeJs/dept/node_modules/express/lib/response.js#setCharset#758;C:/Anton/NodeJs/dept/node_modules/express/lib/response.js#sign#597;C:/Anton/NodeJs/dept/node_modules/express/lib/response.js#statuses#519;C:/Anton/NodeJs/dept/node_modules/express/lib/response.js#vary#931;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/express/lib/router/route.js#Layer#324;C:/Anton/NodeJs/dept/node_modules/express/lib/router/route.js#debug#230;C:/Anton/NodeJs/dept/node_modules/express/lib/router/route.js#flatten#284;C:/Anton/NodeJs/dept/node_modules/express/lib/router/route.js#methods#356;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/mongodb/lib/server.js#AggregationCursor#187;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/server.js#CServer#119;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/server.js#CommandCursor#243;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/server.js#Cursor#154;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/server.js#Define#438;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/server.js#EventEmitter#34;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/server.js#MAX_JS_INT#538;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/server.js#MongoError#486;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/server.js#ServerCapabilities#343;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/server.js#Store#401;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/server.js#driverVersion#866;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/server.js#f#295;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/server.js#filterOptions#647;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/server.js#getReadPreference#755;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/server.js#inherits#80;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/server.js#mergeOptions#699;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/server.js#os#796;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/server.js#translateOptions#591;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/mongodb/t1.js#MongoClient#40;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/mongodb/t2.js#MongoClient#40;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/mongodb/lib/topology_base.js#MongoError#32;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/topology_base.js#ServerCapabilities#6532;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/topology_base.js#Store#6509;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/topology_base.js#f#75;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/mongodb/lib/bulk/unordered.js#BSON#322;C:/Program Files/JetBrains/WebStorm 2017.1.4/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/EcmaScript.js#Bulk.prototype#960;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/bulk/unordered.js#Define#355;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/bulk/unordered.js#ObjectID#274;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/bulk/unordered.js#UnorderedBulkOperation#16923;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/bulk/unordered.js#common#19;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/bulk/unordered.js#handleCallback#141;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/bulk/unordered.js#toError#93;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/bulk/unordered.js#utils#51;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/mongodb/lib/gridfs-stream/upload.js#core#4;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/gridfs-stream/upload.js#crypto#40;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/gridfs-stream/upload.js#stream#72;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/gridfs-stream/upload.js#util#104;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/mongodb/lib/url_parser.js#ReadPreference#19;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/url_parser.js#f#99;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/url_parser.js#parser#68;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/express/lib/utils.js#basename#426;C:/Anton/NodeJs/dept/node_modules/express/lib/utils.js#compileETag#3446;C:/Anton/NodeJs/dept/node_modules/express/lib/utils.js#compileQueryParser#3996;C:/Anton/NodeJs/dept/node_modules/express/lib/utils.js#compileTrust#4646;C:/Anton/NodeJs/dept/node_modules/express/lib/utils.js#contentDisposition#198;C:/Anton/NodeJs/dept/node_modules/express/lib/utils.js#contentType#255;C:/Anton/NodeJs/dept/node_modules/express/lib/utils.js#deprecate#298;C:/Anton/NodeJs/dept/node_modules/express/lib/utils.js#etag#456;C:/Anton/NodeJs/dept/node_modules/express/lib/utils.js#flatten#342;C:/Anton/NodeJs/dept/node_modules/express/lib/utils.js#isAbsolute#1308;C:/Anton/NodeJs/dept/node_modules/express/lib/utils.js#mime#389;C:/Anton/NodeJs/dept/node_modules/express/lib/utils.js#normalizeType#1915;C:/Anton/NodeJs/dept/node_modules/express/lib/utils.js#normalizeTypes#2193;C:/Anton/NodeJs/dept/node_modules/express/lib/utils.js#proxyaddr#484;C:/Anton/NodeJs/dept/node_modules/express/lib/utils.js#qs#523;C:/Anton/NodeJs/dept/node_modules/express/lib/utils.js#querystring#547;C:/Anton/NodeJs/dept/node_modules/express/lib/utils.js#setCharset#5243;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/ejs/lib/utils.js</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/mongodb/lib/utils.js#CoreReadPreference#140;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/utils.js#MAX_JS_INT#10007;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/utils.js#MongoError#32;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/utils.js#ReadPreference#70;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/utils.js#assign#10046;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/utils.js#checkCollectionName#9630;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/utils.js#debugOptions#9970;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/utils.js#decorateCommand#9898;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/utils.js#filterOptions#9425;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/utils.js#formattedOrderClause#1752;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/utils.js#getReadPreference#10138;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/utils.js#getSingleProperty#9583;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/utils.js#handleCallback#9857;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/utils.js#isObject#6006;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/utils.js#mergeOptions#9464;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/utils.js#mergeOptionsAndWriteConcern#10071;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/utils.js#normalizeHintField#9808;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/utils.js#parseIndexOptions#9761;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/utils.js#shallowClone#9546;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/utils.js#toError#9681;C:/Anton/NodeJs/dept/node_modules/mongodb/lib/utils.js#translateOptions#9501;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/express/lib/view.js#__express#1569;C:/Anton/NodeJs/dept/node_modules/express/lib/view.js#debug#230;C:/Anton/NodeJs/dept/node_modules/express/lib/view.js#fs#304;C:/Anton/NodeJs/dept/node_modules/express/lib/view.js#path#276;C:/Anton/NodeJs/dept/node_modules/express/lib/view.js#utils#328;</node>
+            <node x="" y="">_process</node>
+            <node x="" y="">assert</node>
+            <node x="" y="">Buffer;</node>
+            <node x="" y="">colors</node>
+            <node x="" y="">crypto</node>
+            <node x="" y="">EventEmitter;</node>
+            <node x="" y="">fs</node>
+            <node x="" y="">http</node>
+            <node x="" y="">__express;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/mongodb/index.js#ReplSet#493;</node>
+            <node x="" y="">isIP;</node>
+            <node x="" y="">os</node>
+            <node x="" y="">version;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/ejs/ejs.js#basename#33746;resolve;</node>
+            <node x="" y="">querystring</node>
+            <node x="" y="">url</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/express/lib/response.js#format#15436;inherits;</node>
+            <node x="" y="">utils</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.4339650383924195" x="1586.0" y="3539.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>All</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>Details</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="99" column="38" lean-forward="false" selection-start-line="99" selection-start-column="38" selection-end-line="99" selection-end-column="38" />
+          <folding />
         </state>
       </provider>
     </entry>
