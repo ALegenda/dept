@@ -111,7 +111,7 @@ app.get(
                 if (doc)
                 {
                     if (passwordHash.verify(password, doc.hash))
-                        response.send(passwordHash.generate(login));
+                        response.redirect("https://google.com");
                     else
                         response.send('Incorrect password');
                 }
