@@ -41,26 +41,35 @@ app.get(
 );
 
 app.get(
-    '/api/adduser/:login/:password',
+    '/api/adduser',
     function (request, response)
     {
+
+        var params = request.query;
         var collection = db.collection('Users');
-        var login = request.params.login;
-        var tmp = collection.findOne({'login': login}).then(
-            function (doc)
-            {
-                if (doc)
+        var login = params['login'];
+        var password = params['password'];
+
+        if (params['password'] !== params['psw-repeat'])
+            response.send('Passwords  can\'t be different');
+        else
+        {
+            var tmp = collection.findOne({'login': login}).then(
+                function (doc)
                 {
-                    response.send('this login already exist');
-                }
-                else
-                {
-                    var password = request.params.password;
-                    var hash = passwordHash.generate((password));
-                    collection.insertOne({"login": login, "password": password, "hash": hash, "teams": []});
-                    response.send(hash);
-                }
-            });
+                    if (doc)
+                    {
+                        response.send('this login already exist');
+                    }
+                    else
+                    {
+                        var password = params['password'];
+                        var hash = passwordHash.generate((login));
+                        collection.insertOne({"login": login, "password": password, "hash": hash, "teams": []});
+                        response.send();
+                    }
+                });
+        }
     }
 );
 
@@ -96,26 +105,22 @@ app.get(
         var collection = db.collection('Users');
         var login = params['login'];
         var password = params['password'];
-        if (params['password'] !== params['psw-repeat'])
-            response.send('Passwords  can\'t be different');
-        else
-        {
-            var tmp = collection.findOne({'login': login}).then(
-                function (doc)
+        var tmp = collection.findOne({'login': login}).then(
+            function (doc)
+            {
+                if (doc)
                 {
-                    if (doc)
-                    {
-                        if (passwordHash.verify(password, doc.hash))
-                            response.send(passwordHash.generate(doc.login));
-                        else
-                            response.send('Incorrect password');
-                    }
+                    if (passwordHash.verify(password, doc.hash))
+                        response.send(passwordHash.generate(login));
                     else
-                    {
-                        response.send('I  have not this user');
-                    }
-                });
-        }
+                        response.send('Incorrect password');
+                }
+                else
+                {
+                    response.send('I  have not this user');
+                }
+            });
+
     }
 );
 
