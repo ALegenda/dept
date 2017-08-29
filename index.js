@@ -54,7 +54,7 @@ app.get(
             response.send('Passwords  can\'t be different');
         else
         {
-            var tmp = collection.findOne({'login': login}).then(
+            collection.findOne({'login': login}).then(
                 function (doc)
                 {
                     if (doc)
@@ -64,9 +64,9 @@ app.get(
                     else
                     {
                         var password = params['password'];
-                        var hash = passwordHash.generate((login));
+                        var hash = passwordHash.generate((password));
                         collection.insertOne({"login": login, "password": password, "hash": hash, "teams": []});
-                        response.send();
+                        response.send(passwordHash.generate(login));
                     }
                 });
         }
@@ -79,7 +79,7 @@ app.get(
     {
         var collection = db.collection('Teams');
         var login = request.params.login;
-        var tmp = collection.findOne({'login': login}).then(
+        collection.findOne({'login': login}).then(
             function (doc)
             {
                 if (doc)
@@ -105,7 +105,7 @@ app.get(
         var collection = db.collection('Users');
         var login = params['login'];
         var password = params['password'];
-        var tmp = collection.findOne({'login': login}).then(
+        collection.findOne({'login': login}).then(
             function (doc)
             {
                 if (doc)
@@ -173,7 +173,7 @@ app.get(
         var collection = db.collection('Teams');
         var login = request.params.login;
         var password = request.params.password;
-        var tmp = collection.findOne({'login': login}).then(
+        collection.findOne({'login': login}).then(
             function (doc)
             {
                 if (doc)
@@ -235,7 +235,7 @@ app.get(
 
 app.get(
     '/api/addtranzaction',
-    function (requset, response)
+    function (request, response)
     {
         var collection = db.collection('Tranzactions');
         var params = request.query;
